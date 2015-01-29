@@ -1,0 +1,128 @@
+body {
+	margin-left: 30px;
+	margin-top: 20px; 
+}
+
+main {
+	font-family: "Merriweather", serif;
+}
+
+section {
+
+}
+
+article {
+	padding-left: 20px;
+}
+
+article > ul > li {
+	display: block;
+}
+
+header {
+	font-weight: 600;
+	font-size: 1.2em; 
+}
+
+header > h1 {
+	padding-left: 20px;
+	text-align: center;
+}
+
+nav {
+	padding-left: 20px
+}
+
+
+nav > ul {
+
+}
+
+nav > ul:first-child {
+	margin-left: -40px;
+}
+
+nav > ul > li {
+	display: inline;
+	list-style-type: none;
+	list-style-position: outside;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+}
+
+
+nav > ul > li > a:link {
+	color: #000; 
+}
+
+nav > ul > li > a:visited {
+	color: #833D01; /* dark brown */
+}
+
+nav > ul > li > a:hover {
+	color: #515308; /* dark green */
+}
+
+nav > ul > li > a:active {
+	color: #EA9E6D; /* tan/peach */
+}
+
+nav > ul > li.current {
+	color: #86830E; /* lime green */
+}
+
+form {
+	margin: 20px 0 5px 0;
+	padding: 5px 0 5px 20px;
+	background-color: #f1eff2;
+	width: 530px;
+}
+
+input, select {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	width: 250px;
+	min-height: 1.2em;
+	font-family: "Merriweather", serif;
+}
+
+input[value=Submit] {
+	font-size: 1.1em;
+	font-weight: 700;
+	margin: 10px 0;
+	vertical-align: middle;
+}
+
+input[type=checkbox] {
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+/*
+input[value=submit]::first-letter {
+	text-transform: uppercase;
+}
+*/
+
+textarea {
+	width: 500px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	min-height: 5em;
+}
+
+section > header > img {
+
+}
+
+footer {
+	border-top: solid 2px #666;
+	padding-top: 5px;
+	text-align: center;
+}
