@@ -9,21 +9,24 @@ function addHeader () {
   var li = document.createElement("li");
   li.classList.add("current");
   li.textContent = "Home";
+  ul.appendChild(li);
 
   var li = document.createElement("li");
   var a = document.createElement("a");
   a.setAttribute('href','resume.html');
-   a.textContent = "Resume";
+  a.textContent = "Resume";
+  ul.appendChild(li);
+  li.appendChild(a);
 
   var li = document.createElement("li");
   var a = document.createElement("a");
   a.setAttribute('href','blog.html');
   a.textContent = "Blog";
+  ul.appendChild(li);
+  li.appendChild(a);
 
   header.appendChild(nav);
   nav.appendChild(ul);
-  ul.appendChild(li);
-  li.appendChild(a);
 }
 
 
