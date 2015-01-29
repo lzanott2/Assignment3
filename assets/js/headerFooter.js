@@ -11,19 +11,19 @@ function addHeader () {
   li.textContent = "Home";
   ul.appendChild(li);
 
-  var li = document.createElement("li");
-  var a = document.createElement("a");
-  a.setAttribute('href','resume.html');
-  a.textContent = "Resume";
-  ul.appendChild(li);
-  li.appendChild(a);
+  var li2 = document.createElement("li");
+  var a2 = document.createElement("a");
+  a2.setAttribute('href','resume.html');
+  a2.textContent = "Resume";
+  ul.appendChild(li2);
+  li2.appendChild(a2);
 
-  var li = document.createElement("li");
-  var a = document.createElement("a");
-  a.setAttribute('href','blog.html');
-  a.textContent = "Blog";
-  ul.appendChild(li);
-  li.appendChild(a);
+  var li3 = document.createElement("li");
+  var a3 = document.createElement("a");
+  a3.setAttribute('href','blog.html');
+  a3.textContent = "Blog";
+  ul.appendChild(li3);
+  li3.appendChild(a3);
 
   header.appendChild(nav);
   nav.appendChild(ul);
