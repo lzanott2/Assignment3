@@ -1,6 +1,11 @@
+/*
 document.body.onload = addHeader;
 document.body.onload = addFooter;
-
+*/
+window.onload = function(){
+	addHeader();
+	addFooter();
+};
 
 function addHeader () { 
   var header = document.querySelector("header"); 
