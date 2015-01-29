@@ -1,10 +1,20 @@
+/*********** Global ***********/
+
+h1, h2, h3 {
+	font-family: "Merriweather", serif;
+	text-align: center;
+}
+
+/*********** Global ***********/
+
+
 body {
 	margin-left: 30px;
 	margin-top: 20px; 
 }
 
 main {
-	font-family: "Merriweather", serif;
+	
 }
 
 section {
@@ -13,6 +23,13 @@ section {
 
 article {
 	padding-left: 20px;
+	padding-top: 10px;
+	width: 800px;
+	background-color: #c4ed3d; /* lime green */
+}
+
+article > p, article h1 {
+	padding-bottom: 5px;
 }
 
 article > ul > li {
