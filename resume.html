@@ -15,22 +15,17 @@
     <!-- Section  -->
     <section>
         <header>
-            <nav>
-                <ul>  
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current">Resume</li>
-                    <li><a href="blog.html">Blog</a></li>       
-                </ul> 
-            </nav>
-            <h1>L.Z.'s Resume/ Curriculum Vitae</h1>
-            <img src="assets/images/lorilookingdown.png"></img>
+
         </header>
 
 
 
         <article>
+            <img src="assets/images/lorilookingdown.png">
+
             <h2>EDUCATION</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>A.S., Website Software Programming, Santa Rosa Junior College, <em> June 2016 Expected Graduation</em></li>  
                 <li>M.A.S., Web Design & Development, University of Denver, <em>June 2015 Expected Graduation</em></li>                
                 <li>B.A., Communications: Liberal Studies, San Francisco State University, San Francisco, CA, <em>January 2012</em></li>
@@ -38,7 +33,8 @@
             </ul>
 
             <h2>SOFTWARE KNOWLEDGE</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>Microsoft Office: Excel, Word, PowerPoint, Access, Publisher</li>                  
                 <li>AutoCad</li>
                 <li>SQL</li> 
@@ -54,7 +50,8 @@
             </ul>
 
             <h2>SKILLS</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>Graphics Design and Programming</li>                  
                 <li>Creating/Updating Complex Spreadsheets</li>
                 <li>Expense Reporting</li> 
@@ -67,7 +64,8 @@
             </ul>
 
             <h2>TECHNICAL AND DESIGN WORK</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>Website Designer, Yuba River Storage, Downieville, CA</li>              
                 <li>Space Surveyor, Autodesk, San Rafael, CA</li>
                 <li>eCommerce Administrative Assistant, The Dune Group, London, UK</li> 
@@ -76,35 +74,60 @@
             </ul>
 
             <h2>OTHER WORK</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>Registration Support, Enterprise Events Group, San Rafael, CA/li>                  
                 <li>Market Manager/Team Leader/Brand Ambassador, Various Promotional/Marketing Companies, San Francisco and Los Angeles, CA</li>
                 <li>Actress/Spokesperson/Print Model, S.F. Casting and L.A. Casting, San Francisco and Los Angeles, CA</li>  
             </ul>
 
             <h2>ACTIVITIES</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>DU Graduate Student Government Social Committee, The University of Denver, Denver, CO</li> <li>DU Graduate Student Association VP of Communications, The University of Denver, Denver, CO</li>  
                 <li>Volunteer Classroom Aide, Argonne Elementary School, San Francisco, CA</li>                                       
             </ul>
 
             <h2>LANGUAGES</h2>
-            <ul>
+            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
+            <ul class = "classHidden">
                 <li>English - Fluent (Native Language)</li>
                 <li>French - Conversational</li> 
                 <li>Italian - Beginner</li>                                         
             </ul>
 
             <p><em>***I have dual nationality with both the United States and European Union, with no work or travel restrictions.</em>
+
+
         </article>
 
 
         <footer>
-        Copyright &copy; L. Zanotti 2015
+
         </footer>
     
     </section>
 
-  <script type="text/javascript" src="assets/js/headerFooter.js"></script>  
+    <script type="text/javascript" src="assets/js/headerFooter.js"></script>  
+    <script type="text/javascript" language="javascript">
+
+        var Button1 = document.getElementsByClassName('Button1');
+
+        Button1.addEventListener('click', function(evt) {
+            function CollapseExpand ();
+        });
+
+        function CollapseExpand() {
+            var ul = document.querySelector("ul"); 
+
+            if (ul.className == "classHidden") {
+                ul.className = "classVisible";
+            }
+            else {
+                ul.className = "classHidden"; 
+            }
+        } // end CollapseExpand function
+    
+    </script>
   </body>
 </html>

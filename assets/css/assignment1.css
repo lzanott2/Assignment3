@@ -25,16 +25,39 @@ article {
 	padding-left: 20px;
 	padding-top: 10px;
 	width: 800px;
-	background-color: #c4ed3d; /* lime green */
+	margin: 0 auto;
 }
 
-article > p, article h1 {
-	padding-bottom: 5px;
+article > p, article h1, article h2{
+	padding: 5px;
 }
 
 article > ul > li {
 	display: block;
+	/*visibility: collapse;*/
+	background-color: #c4ed3d; /* lime green */
+	padding: 10px;
 }
+
+
+.classVisible {
+	display:block;
+}
+
+.classHidden {
+	display:none;
+}
+
+
+article > h2 {
+/*	background-image:url('http://idratherbewriting.com/wp-content/uploads/2013/03/plus3.jpg');
+    background-repeat:no-repeat;
+    background-position:4px 8px;*/
+}
+
+/*.open {
+	background-image:url('http://idratherbewriting.com/wp-content/uploads/2013/03/minusb.jpg');
+}*/
 
 header {
 	font-weight: 600;
@@ -134,9 +157,6 @@ textarea {
 	min-height: 5em;
 }
 
-section > header > img {
-
-}
 
 footer {
 	border-top: solid 2px #666;
