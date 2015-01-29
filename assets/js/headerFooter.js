@@ -1,6 +1,5 @@
-document.body.onload = addHeader;
-document.body.onload = addFooter;
-
+addHeader();
+addFooter();
 
 function addHeader () { 
   var header = document.querySelector("header"); 
@@ -20,8 +19,9 @@ function addHeader () {
 
 function addFooter () { 
   var footer = document.querySelector("footer"); 
-	footer.textContent = "Copyright © L. Zanotti 2015";
-	document.body.appendChild(footer);
+  var span = document.createElement('span');
+  span.textContent = "Copyright © L. Zanotti 2015";
+  footer.appendChild(span);
 }
 
 
