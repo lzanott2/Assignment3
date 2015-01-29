@@ -5,10 +5,20 @@ function addHeader () {
   var header = document.querySelector("header"); 
   var nav = document.createElement("nav");
   var ul = document.createElement("ul");
+  
+  var li = document.createElement("li");
+  li.classList.add("current");
+  li.textContent = "Home";
+
   var li = document.createElement("li");
   var a = document.createElement("a");
-  
-  li.textContent = "this is a link";
+  a.setAttribute('href','resume.html');
+   a.textContent = "Resume";
+
+  var li = document.createElement("li");
+  var a = document.createElement("a");
+  a.setAttribute('href','blog.html');
+  a.textContent = "Blog";
 
   header.appendChild(nav);
   nav.appendChild(ul);
