@@ -42,10 +42,15 @@ article > ul > li {
 
 .classVisible {
 	display:block;
+	background-image:url('http://idratherbewriting.com/wp-content/uploads/2013/03/minusb.jpg');
+
 }
 
 .classHidden {
 	display:none;
+	background-image:url('http://idratherbewriting.com/wp-content/uploads/2013/03/plus3.jpg');
+    background-repeat:no-repeat;
+    background-position:4px 8px;
 }
 
 
