@@ -24,28 +24,13 @@ function addFooter () {
 	document.body.appendChild(footer);
 }
 
-//document.querySelector
-//element.setAttribute(attribute, value);
 
+// Everything below needs to go into the header.
 
-  //   li.classList.add('current');
-
-  //   header.textContent = "Testing, testing, can you see this?";
-  //   element.setAttribute(attribute, value);
-  
-  // document.body.appendChild(header);
-  // document.body.appendChild(nav);
-  // document.body.appendChild(ul);
-  // document.body.appendChild(li);
-  // document.body.appendChild(a);
-
-//   // Create a new, plain <span> element
-// var sp1 = document.createElement("span");
-
-// // Get a reference to the element, before we want to insert the element
-// var sp2 = document.getElementById("childElement");
-// // Get a reference to the parent element
-// var parentDiv = sp2.parentNode;
-
-// // Insert the new element into the DOM before sp2
-// parentDiv.insertBefore(sp1, sp2);
+// <nav>
+//   <ul>
+//     <li class="current">Home</li>
+//     <li><a href="resume.html">Resume/CV</a></li>
+//     <li><a href="blog.html">Blog</a></li>       
+//     </ul> 
+// </nav>
