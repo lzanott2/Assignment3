@@ -24,8 +24,8 @@
             <img src="assets/images/lorilookingdown.png">
 
             <h2>EDUCATION</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button1">Show/Hide</button>
+            <ul id="con1" class = "classHidden">
                 <li>A.S., Website Software Programming, Santa Rosa Junior College, <em> June 2016 Expected Graduation</em></li>  
                 <li>M.A.S., Web Design & Development, University of Denver, <em>June 2015 Expected Graduation</em></li>                
                 <li>B.A., Communications: Liberal Studies, San Francisco State University, San Francisco, CA, <em>January 2012</em></li>
@@ -33,8 +33,8 @@
             </ul>
 
             <h2>SOFTWARE KNOWLEDGE</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button2">Show/Hide</button>
+            <ul id ="con2" class = "classHidden">
                 <li>Microsoft Office: Excel, Word, PowerPoint, Access, Publisher</li>                  
                 <li>AutoCad</li>
                 <li>SQL</li> 
@@ -50,8 +50,8 @@
             </ul>
 
             <h2>SKILLS</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button3">Show/Hide</button>
+            <ul id="con3" class = "classHidden">
                 <li>Graphics Design and Programming</li>                  
                 <li>Creating/Updating Complex Spreadsheets</li>
                 <li>Expense Reporting</li> 
@@ -64,8 +64,8 @@
             </ul>
 
             <h2>TECHNICAL AND DESIGN WORK</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button4">Show/Hide</button>
+            <ul id="con4" class = "classHidden">
                 <li>Website Designer, Yuba River Storage, Downieville, CA</li>              
                 <li>Space Surveyor, Autodesk, San Rafael, CA</li>
                 <li>eCommerce Administrative Assistant, The Dune Group, London, UK</li> 
@@ -74,23 +74,23 @@
             </ul>
 
             <h2>OTHER WORK</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button5">Show/Hide</button>
+            <ul id="con5" class = "classHidden">
                 <li>Registration Support, Enterprise Events Group, San Rafael, CA/li>                  
                 <li>Market Manager/Team Leader/Brand Ambassador, Various Promotional/Marketing Companies, San Francisco and Los Angeles, CA</li>
                 <li>Actress/Spokesperson/Print Model, S.F. Casting and L.A. Casting, San Francisco and Los Angeles, CA</li>  
             </ul>
 
             <h2>ACTIVITIES</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse" /> 
-            <ul class = "classHidden">
+            <button class= "Button6">Show/Hide</button>
+            <ul id="con6" class = "classHidden">
                 <li>DU Graduate Student Government Social Committee, The University of Denver, Denver, CO</li> <li>DU Graduate Student Association VP of Communications, The University of Denver, Denver, CO</li>  
                 <li>Volunteer Classroom Aide, Argonne Elementary School, San Francisco, CA</li>                                       
             </ul>
 
             <h2>LANGUAGES</h2>
-            <input class= "Button1" type="submit" value="Expand/Collapse"/> 
-            <ul class = "classHidden">
+            <button class= "Button7">Show/Hide</button>
+            <ul id="con7" class = "classHidden">
                 <li>English - Fluent (Native Language)</li>
                 <li>French - Conversational</li> 
                 <li>Italian - Beginner</li>                                         
@@ -111,23 +111,116 @@
     <script type="text/javascript" src="assets/js/headerFooter.js"></script>  
     <script type="text/javascript" language="javascript">
 
-        var Button1 = document.getElementsByClassName('Button1');
 
-        Button1.addEventListener('click', function(evt) {
-            function CollapseExpand ();
-        });
 
-        function CollapseExpand() {
-            var ul = document.querySelector("ul"); 
 
-            if (ul.className == "classHidden") {
-                ul.className = "classVisible"
-            }
-            else {
-                ul.className = "classHidden" 
-            }
-        }; // end CollapseExpand function
-    
+var Button1 = document.querySelector('.Button1');
+var ul1 = document.querySelector("#con1");
+        
+Button1.addEventListener('click', function (evt) {
+    if (ul1.className === "classHidden") {
+        ul1.classList.remove("classHidden");
+        ul1.classList.add("classVisible");
+    }
+    else {
+        ul1.classList.remove("classVisible");
+        ul1.classList.add("classHidden");
+    }
+}
+)
+
+
+
+var Button2 = document.querySelector('.Button2');
+var ul2 = document.querySelector("#con2");
+        
+Button2.addEventListener('click', function (evt) {
+    if (ul2.className === "classHidden") {
+        ul2.classList.remove("classHidden");
+        ul2.classList.add("classVisible");
+    }
+    else {
+        ul2.classList.remove("classVisible");
+        ul2.classList.add("classHidden");
+    }
+}
+)   
+
+var Button3 = document.querySelector('.Button3');
+var ul3 = document.querySelector("#con3");
+        
+Button3.addEventListener('click', function (evt) {
+    if (ul3.className === "classHidden") {
+        ul3.classList.remove("classHidden");
+        ul3.classList.add("classVisible");
+    }
+    else {
+        ul3.classList.remove("classVisible");
+        ul3.classList.add("classHidden");
+    }
+}
+) 
+
+var Button4 = document.querySelector('.Button4');
+var ul4 = document.querySelector("#con4");
+        
+Button4.addEventListener('click', function (evt) {
+    if (ul4.className === "classHidden") {
+        ul4.classList.remove("classHidden");
+        ul4.classList.add("classVisible");
+    }
+    else {
+        ul4.classList.remove("classVisible");
+        ul4.classList.add("classHidden");
+    }
+}
+) 
+
+var Button5 = document.querySelector('.Button5');
+var ul5 = document.querySelector("#con5");
+        
+Button5.addEventListener('click', function (evt) {
+    if (ul5.className === "classHidden") {
+        ul5.classList.remove("classHidden");
+        ul4.classList.add("classVisible");
+    }
+    else {
+        ul5.classList.remove("classVisible");
+        ul5.classList.add("classHidden");
+    }
+}
+)   
+
+var Button6 = document.querySelector('.Button6');
+var ul6 = document.querySelector("#con6");
+        
+Button6.addEventListener('click', function (evt) {
+    if (ul6.className === "classHidden") {
+        ul6.classList.remove("classHidden");
+        ul4.classList.add("classVisible");
+    }
+    else {
+        ul6.classList.remove("classVisible");
+        ul6.classList.add("classHidden");
+    }
+}
+) 
+var Button7 = document.querySelector('.Button7');
+var ul7 = document.querySelector("#con7");
+        
+Button7.addEventListener('click', function (evt) {
+    if (ul7.className === "classHidden") {
+        ul7.classList.remove("classHidden");
+        ul7.classList.add("classVisible");
+    }
+    else {
+        ul7.classList.remove("classVisible");
+        ul7.classList.add("classHidden");
+    }
+}
+) 
+
+
     </script>
   </body>
 </html>
